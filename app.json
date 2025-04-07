@@ -1,0 +1,19 @@
+{
+  "name": "Uber dos Lavajatos",
+  "description": "Backend de um app tipo Uber para lava jatos",
+  "env": {
+    "MONGODB_URI": {
+      "description": "Conexão com banco MongoDB",
+      "required": true
+    },
+    "JWT_SECRET": {
+      "description": "Senha usada para autenticação JWT",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
